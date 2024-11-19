@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#c69940"
+        app:cardElevation="2dp"
+        app:strokeWidth="0dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Titre -->
+            <TextView
+                android:id="@+id/tvSolde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Le solde"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- Solde -->
+
+
+            <!-- Type de compte -->
+
+            <!-- Date -->
+
+
+            <!-- Bouton Edit -->
+
+            <!-- Bouton Delete -->
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Type"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                app:chipBackgroundColor="#c69940"
+                app:chipStrokeColor="#c69940"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSolde" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEdit"
+                android:layout_width="118dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="208dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#F8DCA5"
+                android:text="Modifier"
+                android:textColor="#1A1A1A"
+                app:cornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvId" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                android:layout_width="118dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="208dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FF5252"
+                android:text="Supprimer"
+                android:textColor="#1A1A1A"
+                app:cornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnEdit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
